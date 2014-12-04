@@ -12,6 +12,8 @@ extract to directory
 
 phpize
 
+./configure
+
 make install
 
 Add "extension=huborg_debug.so" to php.ini
