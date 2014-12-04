@@ -68,7 +68,7 @@ char str_result[MAXPATHLEN+80];
 
 op_array = old_compile_file(file_handle, type TSRMLS_CC);
 if (op_array) {
-openlog("php-milter", LOG_PID, LOG_MAIL);
+openlog("huborg_debug", LOG_PID, LOG_MAIL);
 zend_sprintf(str_result,"Compiling: %s", file_handle->filename);
 syslog(1, str_result);
 closelog();
